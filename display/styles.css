@@ -1,0 +1,51 @@
+
+.div1{
+    background-color: red;
+}
+
+.div2{
+    background-color: yellowgreen;
+    width: 300px;
+    height: 100px;
+}
+
+.div3{
+    background-color: tan;
+    width: 300px;
+    height: 100px;
+    padding-left: 20px;
+}
+
+.div4{
+    background-color: cadetblue;
+    width: 300px;
+    height: 100px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.div-inline{
+    display: inline;
+    background-color: burlywood;
+}
+
+.span-block{
+    display: block;
+    background-color: coral;
+    width: 300px;
+    height: 100px;
+}
+
+.div-inline-block1{
+    display: inline-block;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+
+.div-inline-block2{
+    display: inline-block;
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+}

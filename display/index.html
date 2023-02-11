@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Propriedade CSS: Display</title>
+    </head>
+    <body>
+        <!--
+            *Toda tag HTML tem um display padrão que poder display: block ou 
+            display: inline
+
+            * Um elemento display: block sempre inicia em uma nova linha
+               e sempre ocupada toda a largura dispinivel
+
+            * Embora o display block pegue toda a largura disponivel na tela por padrão,
+                você pode demilitar sua área atraves de "width" e "heigth"
+
+            Tags que são por padrão display block:
+                    <address>
+                    <article>
+                    <aside>
+                    <blockquote>
+                    <canvas>
+                    <dd>
+                    <div>
+                    <dl>
+                    <dt>
+                    <fieldset>
+                    <figcaption>
+                    <figure>
+                    <footer>
+                    <form>
+                    <h1>-<h6>
+                    <header>
+                    <hr>
+                    <li>
+                    <main>
+                    <nav>
+                    <noscript>
+                    <ol>
+                    <p>
+                    <pre>
+                    <section>
+                    <table>
+                    <tfoot>
+                    <ul>
+                    <video>
+
+                    p
+                    h1, h2, h3, h4, h5, h6
+                    ol, ul
+                    pre
+                    address
+                    blockquote
+                    dl
+                    div
+                    fieldset
+                    form
+                    hr
+                    noscript
+                    table
+
+
+
+        -->
+        <div class="div1">linha 1 (por padrao, uma "div" é display:block)</div>
+        <div class="div2">linha 2 - cada "div" é posta como um novo elemento de tela</div>
+        <div class="div3">linha 3 - mesmo tendo as mesmas dimensoes essa div parece maior. Isso ocorre porque, por padrao, o padding é somado a largura/altura total do elemnto </div>
+        <div class="div4">linha 4 - para resolver isso, utilize a propriedade "box-sizing" que modifica o comportamento padrão de incoparação de "padding" e "margin" a um elemento</div>
+
+        <br/>
+        <br/>
+
+        <!--
+            * Um elemento com "display: inline" não inicia uma nova linha, ou seja, se houverem vários elemntos
+                com essa característica sempre ficarão um ao lado do outro. 
+            * Pega somente a largura necessária para conter o conteudo daquele elemento  
+            * Elementos com display inline nao podem ter "width" e "height" pre-definidos. Esses valores nao podem 
+             ser aplicados.
+            * "padding" e "margin" podem ser aplicados.
+
+            Tags que são por padrão display inline:
+            
+            <a>
+            <abbr>
+            <acronym>
+            <b>
+            <bdo>
+            <big>
+            <br>
+            <button>
+            <cite>
+            <code>
+            <dfn>
+            <em>
+            <i>
+            <img>
+            <input>
+            <kbd>
+            <label>
+            <map>
+            <object>
+            <output>
+            <q>
+            <samp>
+            <script>
+            <select>
+            <small>
+            <span>
+            <strong>
+            <sub>
+            <sup>
+            <textarea>
+            <time>
+            <tt>
+            <var>
+
+            b, big, i, small, tt
+            abbr, acronym, cite, code, dfn, em, kbd, strong, samp, var
+            a, bdo, br, img, map, object, q, script, span, sub, sup
+            button, input, label, select, textarea
+        -->
+        <span>Span</span>
+        <button>Botão</button>
+        <input type="text" placeholder="display inline"/>
+
+        <!--
+            É possivel modificar o comportamento padrão de um elemento, por exemplo, fazer uma "div" ser diplay-inline
+            e um "span" ser diplay block
+        -->
+        <div class="div-inline">1 - div com comportamento "display inline"</div>
+        <span class="span-block">2 - span com comportamento "display block"</span>
+
+        <!--
+            Existe ainda o comportamento inline-block que não vem por padrão em nenhuma tag HTML.
+
+            * permite que uma tag tenha comportamento de inline e block ao mesmo tempo.
+            * os elemntos ficarão lado a lado com em inline.
+            * os elementos poderão ter "width" e "heigth" definidos como em block. 
+        -->
+        <div class="div-inline-block1">1 - inline-block</div>
+        <div class="div-inline-block2">2 - inline-block</div>
+        <div class="div-inline-block1">3 - inline-block</div>
+        <div class="div-inline-block2">4 - inline-block</div>
+    </body>
+</html>
