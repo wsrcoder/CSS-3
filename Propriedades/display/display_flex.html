@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink_to_fit=no" >
+        <link rel="stylesheet" href="styles.css">
+        <title>Propriedade CSS: Display (Flex)</title>
+    </head>
+    <body>
+        <!--
+            container padrao. Nesse caso, o comportamento de display é o "block" que é o padrão para elementos "div"
+        -->
+        <div class="container-default">
+            <h3>display: block</h3>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+        <!--
+           * O display flex é também conhecido como "flex box". Embora esteja contido em display 
+           assim como "display: block" e "display: inline"
+            modifica os elementos de uma forma diferente.
+           * Deve ser incluido em container que conterá diversos elementos, ou seja, 
+           deve definido em um elemento pai e nao em elementos filhos.
+           Em outras palavras o container de display flex sempre estará encapsulando diversos elementos filhos.
+           * Possui duas direções "row" e "column"
+        -->
+        <h3>display: flex</h3>
+        <div class="container-flex">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+        <h3>display: flex(alinhamento horizontal), justify: center</h3>
+        <div class="container-flex-horizontal-center">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+        <h3>display: flex(alinhamento horizontal), justify: space-around</h3>
+        <div class="container-flex-space-around">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+        <h3>display: flex(alinhamento horizontal), justify:space-between</h3>
+        <div class="container-flex-space-between">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+        <h3>display: flex(alinhamento vertical), align-items: center</h3>
+        <div class="container-flex-verical-center">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+        <!--
+            È possivel utilizar "jutify-content" e "align-items" para alinha o conteudo
+        -->
+        <h3>display: justify-content: center, align-items:center</h3>
+        <div class="container-flex-center">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+        <!--
+            Quando você coloca muitos elementos dentro de um container, eles tentam se adequar a largura/altura 
+            disponivel e começam a criar distorções nos elementos filhos alterando suas "width" e "heigth" definidas.
+            Os elementos ficarão menores que o proposto e sem aplicação de esparçamento, padding, etc planejados.
+        -->
+        <h3>display: justify-content: center, align-items:center</h3>
+        <div class="container-flex-center">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+            <div class="item">12</div>
+            <div class="item">13</div>
+            <div class="item">14</div>
+            <div class="item">15</div>
+        </div>
+
+        <!--
+            Para resolver o problema citado acima, existe a propriedade "flex-wrap" que altera o comportamento
+            de display flex para que quando os elementos filhos chegem ao limite de espaço do container eles
+            automaticamente sejam reposicionados para a linha de baixo.
+        -->
+        <h3>display: justify-content: center, align-items:center, flex-wrap: wrap</h3>
+        <div class="container-flex-center-wrap">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+            <div class="item">12</div>
+            <div class="item">13</div>
+            <div class="item">14</div>
+            <div class="item">15</div>
+        </div>
+
+        <!--
+            a propriedade do css "flex-basis" fará com que cada elemento tenha uma largura inicial definida
+
+            a propriedade "flex-grow" define como um elemento filho crescerá proporcionalmente a área 
+            disponivel no container
+
+            de modo analogo, "flex-shrink" trabalha de modo oposto a "flex-grow"
+        -->
+        <h3>display: justify-content: center, align-items:center, flex-basis, flex-grow</h3>
+        <div class="container-flex-center">
+            <div class="item-box" id="item-1">1</div>
+            <div class="item-box" id="item-2">2</div>
+            <div class="item-box" id="item-3">3</div>
+        </div>
+    </body>
+</html>

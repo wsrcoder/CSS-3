@@ -1,0 +1,1 @@
+Essa seção visa o treinamento de layouts apenas html e css para praticar a criação de qualquer layout.

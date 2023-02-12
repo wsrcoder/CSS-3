@@ -1,3 +1,7 @@
 Html block and inline elemnts
 
 https://www.w3schools.com/html/html_blocks.asp
+
+Aprenda flexbox em 20 minutos - Tutorial flexbox
+
+https://www.youtube.com/watch?v=P9TrFDNwor4
