@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Unidades de Medida</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>EM</h1>
+
+        <!-- Por padrao, as fontes dessa pagina possuem 14px-->
+        <p>fonte com 14px</p>
+
+        <!--os elementos filhos herdarão os tamanhos dos elementos pais e aplicarão
+            os tamanhos proporcionalmente baseando-se no valor de EM. No paragrafo abaixo
+            a fonte possuim: 14px * 1.2 = 16px
+        -->
+        <p class="exemplo-em-1">fonte com 1.2em</p>
+
+        <!--14px * 1.8 = 25px-->
+        <p class="exemplo-em-2">fonte com 1.8em</p>
+
+        <!--Aplicando as duas alterações de fonte ao paragrafo
+            14px * 1.2 = 16.8px
+            16.8 * 1.8 = 30.2px
+        -->
+        <div class="exemplo-em-1">
+            <!--paragrafo com 30.2px-->
+            <p class="exemplo-em-2">fonte 2.34em</p>
+        </div>
+
+        <!--REM basea-se no valor estabelecido como elemento 'root' da pagina que 
+        normalmente é a tag <html>
+        A menos que seja alterado o valor padrao de REM é 16px    
+
+        REM nao mudará não importando o quao profundamente os elementos estejam aninhados
+        pois pega como base o eleemnto root
+        -->
+        <p class="exemplo-rem-1">fonte 1.3rem</p>
+
+        <p class="exemplo-rem-2">fonte 2.5rem</p>
+    </body>
+</html>
