@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="stylesheet"  href="style.css"/>
+    </head>
+    <body>
+
+        <!--
+            Position:
+
+            static: 
+                *posição padrão dos elementos html. Um elemento abaixo do outro.
+                *Quando declaramos um div, ou um paragrafo, etc, por padrao, eles vem com position static.
+                * Não permite que as propriedades top, rigth, bottom e left sejam alteradas.
+
+                Relative: 
+                    *similar ao static ao posicionar os elementos um abaixo do outro no fluxo do documento.
+                    * mas, ao contrario de static, permite que as propriedades top, right, bottom e left sejam alteradas.
+
+                absolute:
+                    * a principio, permite que os elemntos sejam posicionados em relação a tela. 
+                    * mas se voce utiliza um elemento filho com position absolute e o elemento pai
+                      possui position relative voce posiciona o elemento filho dentro do elemento pai. 
+
+                fixed:
+                    * fixa o elemento na tela, mesmo se o usuario utilizar o scroll.
+
+                sticky: 
+                    * uma mistura de fixed com relative.
+        -->
+
+        <!-- STATIC-->
+        <div>Static 1</div>
+        <div>Static 2</div>
+        <div>Static 3</div>
+        <p>Paragrafo com posicionamento Padrao(static)</p>
+        <div>Static 4</div>
+        <div class="statica-1">Static com left: 30px(mas nada acontece) </div>
+        
+        <!--RELATIVE-->
+        <div class="relativa-1">Relative 1</div>
+        <div class="relativa-1">Relative 2</div>
+
+        <!-- Observe que a div vai invadir o espaço da div abaixo-->
+        <div class="relativa-2">Relative 3. top: 30px e left: 30px</div>
+        <div>Static 5</div>
+
+        <!--ABSOLUTE-->
+
+        <!--
+            Como nao há left, top, right, bottom definidos respeita o fluxo html
+        -->
+        <div class="absoluta-1">Absolute 1</div>
+        <!--
+            A partir do instante em que Left, Top, Rigth, Bottom sao definidos seu
+            posicionamento basea-se na tela e, nesse caso, o elemento é jogado para 
+            o topo da tela
+
+            pelo fato de estarem com position:absolute, se voce criar mais elementos
+            com essa mesma classe estes estarão sobrepostos e nao poderão ser visualizados.
+        -->
+        <div class="absoluta-2">Absoluta 2</div>
+        <div class="absoluta-2">Absoluta 2</div>
+        <div class="absoluta-2">Absoluta 2</div>
+
+        <!--
+            Usando posicao absoluta dentro de um eleento pai com posicao relativa
+        -->
+        <div class="relativa-1">
+            <div class="absoluta-2">
+                Relativa-1/Absoluta-2
+            </div>
+        </div>
+
+        <!--FIXED-->
+        <!--
+            * é como se o elemento estivesse preso ao scroll
+            * ideal pra menus fixos
+        -->
+        <div class="fixado-1">Fixed 1</div>
+
+
+        <!--STICK-->
+        <!--
+            *Respeita sua posicao no fluxo
+        -->
+
+        <div class="grudado-1">Sticky 1</div>
+    </body>
+</html>
